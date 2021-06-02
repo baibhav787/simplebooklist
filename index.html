@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">My Book List</h1>
+
+        <form id='libForm'>
+            <div class="form-group">
+                <label for="bookName">Book name</label>
+                <input type="text" class="form-control" id="book-name" aria-describedby="emailHelp">
+
+            </div>
+            <div class="form-group">
+                <label for="authorName">Author</label>
+                <input type="text" class="form-control" id="author-name">
+            </div>
+            <div class="form-group">
+                <label for="inbs.no">INBS.No</label>
+                <input type="text" class="form-control" id="inbs">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary" id="add-book">Add book</button>
+        </form>
+        <table class="table table-striped table-dark mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Book name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Inbs.No</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
